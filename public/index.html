@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopNest | Everyday finds, thoughtfully picked</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="announcement">A little something for your everyday <span>✦</span> Free delivery on orders over ₹1,499</div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">s</span><span>shopnest<span class="brand-dot">.</span></span></a>
+    <nav class="desktop-nav"><a class="active" href="#shop">Shop</a><a href="#shop" data-filter-link="Home">Home & Living</a><a href="#shop" data-filter-link="Tech">Tech</a><a href="#shop" data-filter-link="Style">Style</a></nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Search"><span class="search-icon"></span></button>
+      <button class="cart-button" id="cart-open"><span class="bag-icon">♧</span><span>Bag</span><b id="cart-count">0</b></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE EVERYDAY EDIT</div>
+        <h1>Good things.<br><em>Better living.</em></h1>
+        <p>Thoughtfully picked essentials to make your everyday a little more lovely.</p>
+        <a class="primary-btn" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="avatar-stack"><i>✦</i><i>☺</i><i>♥</i></span><span><strong>2,400+</strong> happy everyday shoppers</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-sticker"><span>little joys,</span><strong>every day</strong><i>✳</i></div>
+        <div class="hero-caption"><span>CURATED FOR YOU</span><span>01 / 04</span></div>
+      </div>
+      <div class="hero-sparkle sparkle-one">✳</div><div class="hero-sparkle sparkle-two">✦</div>
+    </section>
+    <section class="benefits">
+      <div><span class="benefit-icon">↗</span><span><strong>Thoughtfully chosen</strong><small>Quality over quantity, always</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><strong>Made for real life</strong><small>Useful things you'll love</small></span></div>
+      <div><span class="benefit-icon">♧</span><span><strong>Easy on the planet</strong><small>Less fuss, more thought</small></span></div>
+      <div><span class="benefit-icon">⌁</span><span><strong>Little joys, delivered</strong><small>Right to your doorstep</small></span></div>
+    </section>
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE GOOD STUFF</div><h2>Find your <em>favourite.</em></h2><p>Small upgrades. Big everyday energy.</p></div>
+        <div class="product-count"><span id="result-count">6</span> lovely finds</div>
+      </div>
+      <div class="shop-controls">
+        <div class="category-tabs" id="category-tabs">
+          <button class="category active" data-category="All">All finds <span>06</span></button>
+          <button class="category" data-category="Home">Home & living</button>
+          <button class="category" data-category="Tech">Tech</button>
+          <button class="category" data-category="Style">Style</button>
+        </div>
+        <div class="sort-wrap"><span>Sort by</span><select id="sort-select"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+      </div>
+      <div class="search-row" id="search-row"><input id="search-input" placeholder="Search your next favourite..." /><button id="search-close">✕</button></div>
+      <div class="product-grid" id="product-grid"><div class="loading">Finding your good stuff…</div></div>
+      <div class="collection-banner"><div class="banner-icon">✳</div><div><span>YOUR SPACE, YOUR PACE</span><h3>Make room for the things<br>that make you smile.</h3></div><a href="#shop">Shop the edit <span>↗</span></a><div class="banner-orb"></div></div>
+    </section>
+    <section class="newsletter"><div><div class="eyebrow">A NOTE FROM OUR NEST</div><h2>Good things in your inbox.</h2><p>New finds, little ideas, and 10% off your first order.</p></div><form id="newsletter-form"><input type="email" placeholder="Your email address" required><button type="submit">Count me in ↗</button></form></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">s</span><span>shopnest<span class="brand-dot">.</span></span></a><span>Thoughtfully picked. Happily lived.</span><span>© 2026 ShopNest</span></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
+    <div class="drawer-head"><div><span class="eyebrow">YOUR LITTLE FINDS</span><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button id="cart-close" class="close-btn">✕</button></div>
+    <div id="cart-items" class="cart-items"><div class="empty-cart"><span>♡</span><h3>Your bag is taking a nap.</h3><p>Add something lovely to wake it up.</p><button class="primary-btn" id="continue-shopping">Explore the collection ↗</button></div></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p>Taxes included. Shipping calculated at checkout.</p><button id="checkout-btn" class="checkout-btn">Continue to checkout <span>↗</span></button><div class="secure-note">♡ A happy little purchase, securely placed</div></div>
+  </aside>
+  <div class="modal-wrap" id="checkout-modal">
+    <div class="checkout-modal">
+      <button id="modal-close" class="close-btn modal-x">✕</button>
+      <div class="modal-flower">✳</div><div class="eyebrow">ONE LAST LITTLE THING</div>
+      <h2>Where should we<br><em>send the joy?</em></h2>
+      <form id="checkout-form">
+        <label>Your name<input name="name" required placeholder="e.g. Alex Morgan"></label>
+        <label>Email address<input type="email" name="email" required placeholder="you@example.com"></label>
+        <label>Delivery address<textarea name="address" required rows="2" placeholder="House, street, city"></textarea></label>
+        <button class="checkout-btn" type="submit">Place demo order · <span id="modal-total">₹0</span></button>
+      </form>
+      <p class="demo-note">This is a student demo. No payment will be collected.</p>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

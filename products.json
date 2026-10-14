@@ -1,0 +1,56 @@
+[
+  {
+    "id": "p1",
+    "name": "Sunday Ceramic Mug",
+    "category": "Home",
+    "price": 549,
+    "description": "A slow-morning favourite, made for your daily ritual.",
+    "tag": "BESTSELLER",
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "id": "p2",
+    "name": "Cloud Nine Lamp",
+    "category": "Home",
+    "price": 1899,
+    "description": "A warm little glow for your favourite corner.",
+    "tag": "NEW IN",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "id": "p3",
+    "name": "Everyday Tote",
+    "category": "Style",
+    "price": 799,
+    "description": "Room for all the little things life throws your way.",
+    "tag": "EVERYDAY HERO",
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "id": "p4",
+    "name": "Pebble Wireless Buds",
+    "category": "Tech",
+    "price": 1499,
+    "description": "Your soundtrack, without the tangled-up bits.",
+    "tag": "GOOD SOUND",
+    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "id": "p5",
+    "name": "Soft Space Throw",
+    "category": "Home",
+    "price": 1299,
+    "description": "The soft landing your sofa has been waiting for.",
+    "tag": "SOFT SPOT",
+    "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85"
+  },
+  {
+    "id": "p6",
+    "name": "Pocket Power Bank",
+    "category": "Tech",
+    "price": 999,
+    "description": "A little extra battery for your always-on days.",
+    "tag": "ON THE GO",
+    "image": "https://images.unsplash.com/photo-1609592424845-6a6f0a1e4c74?auto=format&fit=crop&w=800&q=85"
+  }
+]
